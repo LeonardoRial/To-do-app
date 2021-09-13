@@ -1,0 +1,14 @@
+:root {
+  --font: "Azeret Mono", monospace;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--font-colour);
+}
+
+li {
+  list-style: none;
+  color: var(--font-colour);
+  padding-bottom: 0.5rem;
+}

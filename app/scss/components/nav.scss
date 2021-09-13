@@ -1,0 +1,28 @@
+.header,
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+}
+.input {
+  & input,
+  & button {
+    margin: 0;
+    padding: 0.3rem;
+    font-size: 2rem;
+    color: var(--font-colour);
+
+    border: none;
+    outline: none;
+    background: white;
+  }
+  & button {
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #718e75;
+    }
+  }
+}

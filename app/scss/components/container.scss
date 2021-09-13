@@ -1,0 +1,38 @@
+.todo-conatianer,
+.todo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #718e75;
+  min-width: 50%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  & li {
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex: 1;
+    padding-right: 1rem;
+  }
+  & .completed-btn,
+  & .trash-btn {
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: var(--font-colour);
+    color: white;
+    &:hover {
+      background: transparent;
+      color: var(--font-colour);
+    }
+  }
+}
