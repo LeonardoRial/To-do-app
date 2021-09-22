@@ -1,0 +1,9 @@
+$mobile: (
+  "small": "700px",
+);
+
+@mixin mobiles($size) {
+  @media (max-width: map-get($mobile, $size )) {
+    @content;
+  }
+}

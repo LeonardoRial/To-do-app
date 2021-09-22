@@ -1,22 +1,31 @@
+@use "../mixins/index" as *;
+
 .header,
-form {
+.form {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 15vh;
 }
+
 .input {
+  & input {
+    width: 70%;
+  }
   & input,
   & button {
     margin: 0;
     padding: 0.3rem;
     font-size: 2rem;
     color: var(--font-colour);
-
     border: none;
     outline: none;
     background: white;
+    @include mobiles(small) {
+      font-size: 1rem;
+    }
   }
+
   & button {
     cursor: pointer;
 
